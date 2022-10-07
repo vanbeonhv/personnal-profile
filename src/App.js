@@ -7,7 +7,7 @@ function App() {
   const [isEdit, setEdit] = useState(false);
   return (
     <div className="App">
-      {isEdit ? <EditPage /> : <Header setEdit={setEdit} />}
+      {isEdit ? <EditPage setEdit={setEdit} /> : <Header setEdit={setEdit} />}
     </div>
   );
 }
